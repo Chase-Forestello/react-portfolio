@@ -8,9 +8,6 @@
 # testing
 /coverage
 
-# production
-/build
-
 # misc
 .DS_Store
 .env.local
@@ -18,6 +15,20 @@
 .env.test.local
 .env.production.local
 
+# Windows folder files
+Thumbs.db
+Desktop.ini
+
+# Build output
+dist/
+build/
+
+# Visual Studio Code settings
+.vscode/
+
+# Logs and debugging files
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
