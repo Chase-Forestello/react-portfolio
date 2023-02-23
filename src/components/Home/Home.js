@@ -1,6 +1,6 @@
 import LogoC from "../../assets/images/C.png";
 import { Link } from "react-router-dom";
-import "./index.scss";
+import "./Home.scss";
 
 const Home = () => {
   return (

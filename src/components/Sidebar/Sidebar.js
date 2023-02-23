@@ -1,4 +1,4 @@
-import "./index.scss";
+import "./Sidebar.scss";
 import { Link, NavLink } from "react-router-dom";
 import LogoC from "../../assets/images/C.png";
 import LogoSubtitle from "../../assets/images/Chase.png";
