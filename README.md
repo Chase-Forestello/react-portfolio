@@ -1,4 +1,4 @@
-# An updated and more modern verison of my [original portfolio], built in React!
+# An updated and more modern verison of my [original portfolio], built using React!
 
 https://chase-forestello.github.io/react-portfolio
 
