@@ -1,4 +1,4 @@
-# An updated and more modern verison of my original portfolio built in React!
+# An updated and more modern verison of my [original portfolio], built in React!
 
 Using gh-pages dependency to deploy on GitHub. Having some hiccups with routing due to the nature of gh pages.
 
@@ -11,3 +11,6 @@ Main features/skills learned:
   <li>Animate.js</li>
   <li>And hopefully an email library of some kind</li>
 </ul>
+
+
+[original portfolio]: https://chase-forestello.github.io/portfolio/
