@@ -18,7 +18,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
-      <div id="projectContainer" className="row">
+      {/* <div id="projectContainer" className="row">
         <div className="projectCard col-lg-5">
           <h2>GameFace</h2>
           <p>
@@ -310,8 +310,8 @@ const Home = () => {
               <li>JavaScript</li>
             </ul>
           </div>
-        </div>
       </div>
+        </div> */}
     </div>
   );
 };
