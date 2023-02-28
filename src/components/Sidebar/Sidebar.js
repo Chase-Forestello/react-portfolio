@@ -10,6 +10,7 @@ const handleAboutClick = () => {
   let homeLink = document.querySelector("home-link");
   homeLink.classList.toggle("active");
 };
+// Will need to add an Onclick for each link that is not 'Home'
 
 const Sidebar = () => {
   return (
@@ -40,8 +41,10 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           exact="true"
-          activeClassName="active"
-          className="contact-link"
+          className={(navData) =>
+            navData.isActive ? "contact-link active" : "contact-link"
+          }
+          onClick={handleAboutClick}
           to="/react-portfolio/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
