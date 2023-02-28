@@ -71,7 +71,7 @@ nav {
       transition: all 0.3s ease-out;
     }
 
-    a.home-link{
+    &:first-child{
         &:after {
             content: "HOME";
         }

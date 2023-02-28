@@ -6,24 +6,34 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+const handleAboutClick = () => {
+  let homeLink = document.querySelector("home-link");
+  homeLink.classList.toggle("active");
+};
+
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/react-portfolio/home">
+      <Link className={"logo"} to="/react-portfolio/home">
         <img src={LogoC} alt="Logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="Logo" />
       </Link>
       <nav>
         <NavLink
           exact="true"
-          className={(navData) => (navData.isActive ? "home-link active" : "home-link")}
+          className={(navData) =>
+            navData.isActive ? "home-link active" : "home-link"
+          }
           to="/react-portfolio/home"
         >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
-          className={(navData) => (navData.isActive ? "about-link active" : "about-link")}
+          className={(navData) =>
+            navData.isActive ? "about-link active" : "about-link"
+          }
+          onClick={handleAboutClick}
           to="/react-portfolio/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />

@@ -9,8 +9,10 @@ function App() {
     <>
       <Routes>
         <Route path="/react-portfolio" element={<Layout />}>
-          <Route path="home" index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="/react-portfolio" element={<Home />} />  
+          {/* Make this first home route into a welcome page. gh-page routing!*/}
+          <Route path="/react-portfolio/home" index element={<Home />} />
+          <Route path="/react-portfolio/about" element={<About />} />
           {/*<Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/dashboard" element={<Dashboard />} /> */}

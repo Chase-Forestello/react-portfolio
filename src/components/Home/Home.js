@@ -25,15 +25,14 @@ const Home = () => {
 
   useEffect(() => {
     setTimeout(() => {
+      let test = document.querySelector(".home-link");
+      console.log(test);
+      test.classList.add("active");
       return setLetterClass("text-animate-hover");
+
     }, 4000);
   }, []);
 
-  // useEffect(() => {
-  //   return setTimeout(() => {
-  //     setLetterClass("text-animate-hover");
-  //   }, 4000);
-  // }, []);
 
   return (
     <div className="container home-page">
