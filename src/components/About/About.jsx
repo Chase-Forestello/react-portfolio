@@ -2,6 +2,11 @@ import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./About.scss";
 
 const About = () => {
+  let homeLink = document.querySelector(".home-link");
+  console.log(homeLink);
+  homeLink.classList.remove("active");
+
+  // Will need to add for each page that is not 'Home'
   return (
     <div className="container about-page">
       <div className="text-zone">

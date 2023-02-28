@@ -6,12 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const handleAboutClick = () => {
-  let homeLink = document.querySelector("home-link");
-  homeLink.classList.toggle("active");
-};
-// Will need to add an Onclick for each link that is not 'Home'
-
 const Sidebar = () => {
   return (
     <div className="nav-bar">
@@ -34,7 +28,6 @@ const Sidebar = () => {
           className={(navData) =>
             navData.isActive ? "about-link active" : "about-link"
           }
-          onClick={handleAboutClick}
           to="/react-portfolio/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
@@ -44,7 +37,6 @@ const Sidebar = () => {
           className={(navData) =>
             navData.isActive ? "contact-link active" : "contact-link"
           }
-          onClick={handleAboutClick}
           to="/react-portfolio/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
