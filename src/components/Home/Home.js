@@ -23,11 +23,13 @@ const Home = () => {
     "r",
   ];
 
+  let path = window.location.pathname;
+  console.log(path);
   useEffect(() => {
+    let test = document.querySelector(".home-link");
+    console.log(test);
+    test.classList.add("active");
     setTimeout(() => {
-      let test = document.querySelector(".home-link");
-      console.log(test);
-      test.classList.add("active");
       return setLetterClass("text-animate-hover");
 
     }, 4000);
