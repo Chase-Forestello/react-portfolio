@@ -15,4 +15,7 @@ Main features/skills learned:
 </ul>
 
 
+*https://stackoverflow.com/questions/57883297/deploying-reactjs-website-on-github-pages-with-routing-results-in-404-error-on-r 
+potential routing solution for 404's
+
 [original portfolio]: https://chase-forestello.github.io/portfolio/
