@@ -11,10 +11,10 @@ const About = () => {
     }, 3000);
   }, []);
 
-  if(document.querySelector(".home-link")){
-  let homeLink = document.querySelector(".home-link");
-  console.log(homeLink);
-  homeLink.classList.remove("active");
+  if (document.querySelector(".home-link")) {
+    let homeLink = document.querySelector(".home-link");
+    console.log(homeLink);
+    homeLink.classList.remove("active");
   }
 
   // Will need to add for each page that is not 'Home'
