@@ -34,6 +34,13 @@ const Contact = () => {
         }
       );
   };
+
+  if (document.querySelector(".home-link")) {
+    let homeLink = document.querySelector(".home-link");
+    console.log(homeLink);
+    homeLink.classList.remove("active");
+  }
+
   return (
     <>
       <div className="container contact-page">
@@ -56,7 +63,12 @@ const Contact = () => {
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input type="text" name="from_name" placeholder="Name" required />
+                  <input
+                    type="text"
+                    name="from_name"
+                    placeholder="Name"
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input
