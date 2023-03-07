@@ -16,6 +16,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    let emailSuccess = document.querySelector(".emailSuccess");
 
     emailjs
       .sendForm(
@@ -26,18 +27,26 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert("Message successfully sent!");
-          window.location.reload(false);
+          if (emailSuccess) {
+            emailSuccess.classList.toggle("emailToggle");
+          }
+          setTimeout(() => {
+            window.location.reload(false);
+          }, 1000);
         },
         () => {
-          alert("Failed to send message. Please try again.");
+          if (emailSuccess) {
+            emailSuccess.innerText =
+              "Failed to send message. Please try again.";
+            emailSuccess.classList.toggle("emailToggle");
+          }
         }
       );
   };
 
   if (document.querySelector(".home-link")) {
     let homeLink = document.querySelector(".home-link");
-    console.log(homeLink);
+    // console.log(homeLink);
     homeLink.classList.remove("active");
   }
 
@@ -59,6 +68,7 @@ const Contact = () => {
             and small. <br />
             Contact me using the form below!
           </p>
+          <p className="emailSuccess emailToggle">Message sent, thank you!</p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
