@@ -7,6 +7,7 @@ import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
+  // could just use split
   const nameArray = ["h", "a", "s", "e"];
   const webDevArray = [
     "w",
@@ -32,41 +33,44 @@ const Home = () => {
     test.classList.add("active");
     setTimeout(() => {
       return setLetterClass("text-animate-hover");
-
     }, 4000);
   }, []);
 
-
   return (
     <>
-    <div className="container home-page">
-      <div className="text-zone">
-        <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i,</span>
-          <br />
-          <span className={`${letterClass} _13`}>I</span>
-          <span className={`${letterClass} _14`}>'m&nbsp;</span>
-          <img src={LogoC} alt="developer" />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            index={15}
-          />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={webDevArray}
-            index={22}
-          />
-        </h1>
-        <h2>Front-end Developer</h2>
-        <Link to="/react-portfolio/contact" className="flat-button">
-          CONTACT ME
-        </Link>
+      <div className="container home-page">
+        <div className="text-zone">
+          <h1>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i,</span>
+            <br />
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m&nbsp;</span>
+            <img src={LogoC} alt="developer" />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              index={15}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={webDevArray}
+              index={22}
+            />
+          </h1>
+          <h2>Front-end Developer</h2>
+          <div className="home-buttons">
+            <Link to="/react-portfolio/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+            <Link to="/react-portfolio/skills" className="flat-button">
+              MY SKILLS
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
-    <Loader type="pacman"></Loader>
+      <Loader type="pacman"></Loader>
     </>
   );
 };

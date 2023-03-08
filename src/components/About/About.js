@@ -1,6 +1,7 @@
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
+import { Link } from "react-router-dom";
 import "./About.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -53,6 +54,9 @@ const About = () => {
             In my spare time I'm a gamer, bogey golfer, and avid enthusiast of
             all things science.
           </p>
+          <Link to="/react-portfolio/skills" className="flat-button">
+            MY SKILLS
+          </Link>
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">

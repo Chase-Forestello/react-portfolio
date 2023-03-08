@@ -70,9 +70,12 @@
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
 
-    &:hover{
-        background: #8493ce;
-        color: #333;
+    &:hover {
+      background: #8493ce;
+      color: #333;
+    }
+    &:nth-last-of-type(1) {
+      margin-left: 2rem;
     }
   }
 }

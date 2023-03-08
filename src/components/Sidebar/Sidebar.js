@@ -4,7 +4,11 @@ import LogoC from "../../assets/images/C.png";
 import LogoSubtitle from "../../assets/images/Chase.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faStackOverflow,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => {
   return (
@@ -31,6 +35,15 @@ const Sidebar = () => {
           to="/react-portfolio/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          className={(navData) =>
+            navData.isActive ? "skills-link active" : "skills-link"
+          }
+          to="/react-portfolio/skills"
+        >
+          <FontAwesomeIcon icon={faStackOverflow} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
