@@ -75,7 +75,7 @@ const Projects = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={["M", "y", " ", "S", "k", "i", "l", "l", "s"]}
+              strArray={["M", "y", " ", "P", "r", "o", "j", "e", "c", "t", "s"]}
               index={10}
             ></AnimatedLetters>
           </h1>
