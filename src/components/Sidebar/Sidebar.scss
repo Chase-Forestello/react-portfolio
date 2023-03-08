@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818;
-  width: 60px;
+  width: 7rem;
   height: 100%;
   position: absolute;
   top: 0;
@@ -84,9 +84,9 @@ nav {
     }
   }
 
-  a.skills-link{
+  a.projects-link{
     &:after {
-        content: "SKILLS";
+        content: "PROJECTS";
     }
   }
 

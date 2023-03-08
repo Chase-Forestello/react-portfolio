@@ -39,9 +39,9 @@ const Sidebar = () => {
         <NavLink
           exact="true"
           className={(navData) =>
-            navData.isActive ? "skills-link active" : "skills-link"
+            navData.isActive ? "projects-link active" : "projects-link"
           }
-          to="/react-portfolio/skills"
+          to="/react-portfolio/projects"
         >
           <FontAwesomeIcon icon={faStackOverflow} color="#4d4d4e" />
         </NavLink>

@@ -4,6 +4,7 @@ import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import "./Skills.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import {
   faCss3,
   faGitAlt,
@@ -14,10 +15,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const projects = {
-  "Project 1": [
-    {
-      Title: "GameFace",
-      Desciprtion: `GameFace is a single-page application social media platform that
+  Project1: {
+    Title: "GameFace",
+    Desciprtion: `GameFace is a single-page application social media platform that
  allows gamers to connect with other gamers in order to enhance their
  gaming experience. This project uses HTML, CSS (Bootstrap), and a
  small scale SPA JavaScript framework to deliver the front-end. The
@@ -34,26 +34,25 @@ const projects = {
  skill, and play style. Ultimately, GameFace is a networking solution
  that allows users to connect and grow as gamers in a safe and
  inclusive environment.`,
-      GitHub: `https://github.com/GameFaceProductions/GameFace`,
-      Demo: `https://game-face.io/" target="_blank`,
-    },
-  ],
-  "Project 2": [
-    {
-      Title: "Hangry",
-      Desciprtion: `[In Development] Hangry is a solo-project SPA that serves as a magic
+    GitHub: `https://github.com/GameFaceProductions/GameFace`,
+    Demo: `https://game-face.io/" target="_blank`,
+  },
+
+  Project2: {
+    Title: "Hangry",
+    Desciprtion: `[In Development] Hangry is a solo-project SPA that serves as a magic
         8-ball for users to find a place to eat based on the entered
         location. The front-end is built with React, CSS, and some
         Bootstrap. The back-end is built on Spring Boot and is served using
         AWS and the Yelp Fusion API.`,
-      GitHub: `https://github.com/HangryDevelopment`,
-      Demo: `na`,
-    },
-  ],
+    GitHub: `https://github.com/HangryDevelopment`,
+    Demo: `na`,
+  },
 };
-
-console.log(projects);
-const Skills = () => {
+// not the right way, need array of objects...
+console.log([projects]);
+// console.log([projects.Project1.Demo].toString());
+const Projects = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
@@ -64,7 +63,7 @@ const Skills = () => {
 
   if (document.querySelector(".home-link")) {
     let homeLink = document.querySelector(".home-link");
-    console.log(homeLink);
+    // console.log(homeLink);
     homeLink.classList.remove("active");
   }
 
@@ -81,9 +80,11 @@ const Skills = () => {
             ></AnimatedLetters>
           </h1>
           <div className="project-container">
-            <div className="project-cards">
-              <div className="card">Card</div>
-            </div>
+            <ProjectCard project={projects.Project1} />
+            <ProjectCard project={projects.Project2} />
+            {/* <div className="project-cards">
+              <div className="card"></div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -92,4 +93,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Projects;

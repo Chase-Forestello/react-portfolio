@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import "./Home.scss";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
-
+// Add skills to the right side of home page with a projects link beside "contact me"
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   // could just use split
@@ -64,8 +64,8 @@ const Home = () => {
             <Link to="/react-portfolio/contact" className="flat-button">
               CONTACT ME
             </Link>
-            <Link to="/react-portfolio/skills" className="flat-button">
-              MY SKILLS
+            <Link to="/react-portfolio/projects" className="flat-button">
+              MY PROJECTS
             </Link>
           </div>
         </div>
