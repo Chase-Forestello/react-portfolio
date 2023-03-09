@@ -77,13 +77,13 @@
 .contact-page {
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 20%;
     top: 30%;
     transform: translateY(-50%);
-    width: 35%;
+    width: auto;
     vertical-align: middle;
     display: table-cell;
-    max-height: 90%;
+    max-height: 100%;
     white-space: nowrap;
 
     h1 {

@@ -39,6 +39,7 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
+      <span className="tags top-tags">&lt;body&gt;</span>
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>

@@ -1,7 +1,13 @@
 .page {
   width: 100%;
-  height: 100%;
   position: absolute;
+  height: 100%;
+  
+  .skills-page{
+    .tags{
+      display: none;
+    }
+  }
 }
 
 .top-tags {
@@ -21,6 +27,7 @@
 
 .bottom-tag-html {
   margin-left: -20px;
+  top: auto;
 }
 
 .container {

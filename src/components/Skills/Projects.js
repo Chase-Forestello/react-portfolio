@@ -4,6 +4,12 @@ import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import "./Projects.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faStackOverflow,
+} from "@fortawesome/free-brands-svg-icons";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import {
   faCss3,
@@ -118,11 +124,11 @@ const Projects = () => {
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div className="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
             <div className="modal-content">
               <div className="modal-header">
                 <h1
-                  className="modal-title text-center w-100 fs-5"
+                  className="modal-title text-center w-100"
                   id="exampleModalLabel"
                 ></h1>
                 <button
@@ -132,15 +138,13 @@ const Projects = () => {
                   aria-label="Close"
                 ></button>
               </div>
-              <div className="modal-body">...</div>
+              <div className="modal-body"></div>
               <div className="modal-footer text-center w-100">
-                <button
-                  type="button"
-                  className="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
+                <a
+                  href="https://github.com/GameFaceProductions/GameFace"
+                  target="_blank"
+                ><FontAwesomeIcon title="GameFace" icon={faGithub} color="#000"/>
+                </a>
               </div>
             </div>
           </div>

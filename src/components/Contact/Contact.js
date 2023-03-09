@@ -112,6 +112,11 @@ const Contact = () => {
         </div>
       </div>
       <Loader type="pacman"></Loader>
+      <span className="tags bottom-tags">
+          &lt;/body&gt;
+          <br />
+          <span className="bottom-tag-html">&lt;/html&gt;</span>
+        </span>
     </>
   );
 };

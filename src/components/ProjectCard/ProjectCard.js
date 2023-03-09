@@ -6,8 +6,11 @@ const ProjectCard = ({ project }) => {
 const test = project;
   const handleModalClick = (e) => {
     let project = test;
-    let modalTitle = document.querySelector(".modal-title");
     console.log(project);
+    let modalTitle = document.querySelector(".modal-title");
+    modalTitle.innerText = project.Title
+    let modalBody = document.querySelector(".modal-body");
+    modalBody.innerText = project.Description
   };
   return (
     <div className="card">
@@ -21,7 +24,6 @@ const test = project;
       >
         {project.Title}
       </button>
-      <div className="project-des text-wrap">{project.Description}</div>
     </div>
   );
 };
