@@ -2,7 +2,7 @@ import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import { Link } from "react-router-dom";
-import "./Skills.scss";
+import "./Projects.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import {
@@ -15,9 +15,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const projects = {
-  Project1: {
+  GameFace: {
     Title: "GameFace",
-    Desciprtion: `GameFace is a single-page application social media platform that
+    Description: `GameFace is a single-page application social media platform that
  allows gamers to connect with other gamers in order to enhance their
  gaming experience. This project uses HTML, CSS (Bootstrap), and a
  small scale SPA JavaScript framework to deliver the front-end. The
@@ -40,7 +40,7 @@ const projects = {
 
   Project2: {
     Title: "Hangry",
-    Desciprtion: `[In Development] Hangry is a solo-project SPA that serves as a magic
+    Description: `[In Development] Hangry is a solo-project SPA that serves as a magic
         8-ball for users to find a place to eat based on the entered
         location. The front-end is built with React, CSS, and some
         Bootstrap. The back-end is built on Spring Boot and is served using
@@ -50,8 +50,13 @@ const projects = {
   },
 };
 // not the right way, need array of objects...
-console.log([projects]);
-// console.log([projects.Project1.Demo].toString());
+console.log(projects);
+// console.log([projects.GameFace.Demo].toString());
+
+const handleModalClick = () => {
+  let project = document.querySelector(".project");
+  console.log(project);
+};
 const Projects = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
 
@@ -70,7 +75,7 @@ const Projects = () => {
   // Will need to add for each page that is not 'Home'
   return (
     <>
-      <div className="container skills-page">
+      <div className="skills-page container">
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -79,12 +84,65 @@ const Projects = () => {
               index={10}
             ></AnimatedLetters>
           </h1>
-          <div className="project-container">
-            <ProjectCard project={projects.Project1} />
-            <ProjectCard project={projects.Project2} />
+          <div className="project-container container-fluid text-center">
+            <div className="row g-5">
+              <div className="project-cards col-md-6 col-sm-12">
+                <ProjectCard project={projects.GameFace} />
+                <ProjectCard project={projects.Project2} />
+              </div>
+              <div className="project-cards col-md-6 col-sm-12">
+                <ProjectCard project={projects.Project2} />
+                <ProjectCard project={projects.Project2} />
+              </div>
+              <div className="project-cards col-md-6 col-sm-12">
+                <ProjectCard project={projects.Project2} />
+                <ProjectCard project={projects.Project2} />
+              </div>
+              <div className="project-cards col-md-6 col-sm-12">
+                <ProjectCard project={projects.Project2} />
+                <ProjectCard project={projects.Project2} />
+              </div>
+            </div>
             {/* <div className="project-cards">
               <div className="card"></div>
             </div> */}
+          </div>
+        </div>
+      </div>
+      <div>
+        {/* <!-- Modal --> */}
+        <div
+          className="modal fade text-center"
+          id="exampleModal"
+          tabIndex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h1
+                  className="modal-title text-center w-100 fs-5"
+                  id="exampleModalLabel"
+                ></h1>
+                <button
+                  type="button"
+                  className="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div className="modal-body">...</div>
+              <div className="modal-footer text-center w-100">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

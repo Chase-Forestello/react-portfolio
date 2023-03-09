@@ -7,7 +7,7 @@
     width: 100%;
     vertical-align: middle;
     display: table-cell;
-    max-height: 90%;
+    max-height: 100%;
     white-space: nowrap;
 
     h1 {
@@ -15,7 +15,7 @@
       font-family: "Coolvetica";
       color: #8493ce;
       font-weight: 400;
-      margin-top: 0;
+      margin-top: 25rem;
       position: relative;
       margin-bottom: 40px;
       left: 10px;
@@ -44,8 +44,28 @@
       }
     }
 
-    .card {
-      width: 25%;
+    .project-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 5rem;
+      .project-cards{
+        margin-top: 0!important;
+      }
+      .card {
+        width: 100%;
+        margin-top: 2rem;
+        height: 15rem;
+        font-size: 4rem;
+        background: #8493ce86;
+        color: #fff;
+        font-family: "Coolvetica";
+
+        .project-des{
+          font-size: 5px;
+        }
+
+      }
     }
   }
 
@@ -54,4 +74,18 @@
       color: #fff;
     }
   }
+
+  .bottom-tags{
+    margin-top: 1rem;
+  }
+}
+
+.modal-footer{
+  justify-content: center;
+}
+
+.modal-btn{
+  border-radius: 0;
+  width: 100%;
+  font-size: 2rem;
 }
