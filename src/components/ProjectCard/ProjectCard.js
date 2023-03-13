@@ -14,24 +14,41 @@ const ProjectCard = ({ project }) => {
     modalBody.innerText = project.Description;
   };
   return (
-    <div className="card">
-      <img src={require(`../../assets/images/${project.image}.jpg`)}></img>
-      {/* <!-- Button trigger modal --> */}
-      <button
-        type="button"
-        onClick={handleModalClick}
-        className="btn modal-btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-        // style={{
-        //   backgroundImage: require("url(../../assets/images/gameface.jpg)"),
-        //   backgroundPosition: "center",
-        //   backgroundSize: "cover",
-        //   backgroundRepeat: "no-repeat",
-        // }}
-      >
-        {project.Title}
-      </button>
+    // <div className="card">
+    //   <button
+    //   className="test-btn"
+    //     type="button"
+    //   //   onClick={handleModalClick}
+    //   //   className="btn modal-btn btn-primary"
+    //   //   data-bs-toggle="modal"
+    //   //   data-bs-target="#exampleModal"
+    //   >
+    //     {/* {project.Title} */}
+    //   </button>
+    //   <img className="project-images" src={require(`../../assets/images/${project.image}.jpg`)}></img>
+    //   {/* <!-- Button trigger modal --> */}
+    // </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-4">
+          <button className="test-button">
+          <img
+            src={require(`../../assets/images/${project.image}.jpg`)}
+            class="img-fluid rounded-start"
+            alt="..."
+          ></img></button>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3 class="card-title">{project.Title}</h3>
+            <p class="card-text text-wrap">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

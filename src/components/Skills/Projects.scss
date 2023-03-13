@@ -55,14 +55,25 @@
       .card {
         width: 65%;
         margin-top: 2rem;
-        height: 15rem;
-        font-size: 4rem;
         background: #8493ce86;
         color: #fff;
         font-family: "Coolvetica";
 
         .project-des {
           font-size: 5px;
+        }
+        .project-images {
+          height: inherit;
+          width: fit-content;
+        }
+        .card-text {
+          font-size: 1.5rem;
+        }
+        .card-body{
+          padding: 0;
+        }
+        .test-button{
+          padding: 0;
         }
       }
     }
@@ -88,7 +99,8 @@
   .modal-title {
     font-size: 4rem;
   }
-  .modal-footer, .modal-header {
+  .modal-footer,
+  .modal-header {
     justify-content: center;
     font-size: 3rem;
     background: #115173;
@@ -108,7 +120,7 @@
   background: #115173;
   border: solid black 1px;
 }
-.modal-btn:hover{
+.modal-btn:hover {
   background: #8493ce;
   border-color: #115173;
 }
