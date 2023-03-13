@@ -42,6 +42,7 @@ const projects = {
  inclusive environment.`,
     GitHub: `https://github.com/GameFaceProductions/GameFace`,
     Demo: `https://game-face.io/" target="_blank`,
+    Background: '../../assets/images/gameface.jpg'
   },
 
   Project2: {
@@ -53,6 +54,7 @@ const projects = {
         AWS and the Yelp Fusion API.`,
     GitHub: `https://github.com/HangryDevelopment`,
     Demo: `na`,
+    Background: '../../assets/images/hangry.jpg'
   },
 };
 // not the right way, need array of objects...

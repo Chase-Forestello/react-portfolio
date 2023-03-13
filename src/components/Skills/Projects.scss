@@ -103,8 +103,10 @@
 .modal-btn {
   border-radius: 0;
   width: 100%;
+  height: 100%;
   font-size: 3rem;
   background: #115173;
+  background-image: url(../../assets/images/gameface.jpg) ;
   border: solid black 1px;
 }
 .modal-btn:hover{
