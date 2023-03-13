@@ -1,5 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectCard = ({ project }) => {
   //   console.log(project);
@@ -32,11 +34,12 @@ const ProjectCard = ({ project }) => {
       <div class="row">
         <div class="col-md-4">
           <button className="test-button">
-          <img
-            src={require(`../../assets/images/${project.image}.jpg`)}
-            class="img-fluid rounded-start"
-            alt="..."
-          ></img></button>
+            <img
+              src={require(`../../assets/images/${project.image}.jpg`)}
+              class="img-fluid rounded-start"
+              alt={project.image}
+            ></img>
+          </button>
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -46,6 +49,28 @@ const ProjectCard = ({ project }) => {
               lead-in to additional content. This content is a little bit
               longer.
             </p>
+            <div className="project-links">
+              <div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Chase-Forestello"
+                >
+                  <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                </a>
+              </div>
+              <div>
+                {" "}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Chase-Forestello"
+                >
+                  <FontAwesomeIcon icon={faCircleInfo} />
+                </a>
+              </div>
+              <div>3</div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,24 +1,10 @@
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
-import { Link } from "react-router-dom";
 import "./Projects.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedin,
-  faStackOverflow,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import {
-  faCss3,
-  faGitAlt,
-  faHtml5,
-  faJava,
-  faJsSquare,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
 
 const projects = {
   GameFace: {

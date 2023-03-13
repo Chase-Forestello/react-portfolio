@@ -71,56 +71,56 @@ nav {
       transition: all 0.3s ease-out;
     }
 
-    &:first-child{
-        &:after {
-            content: "HOME";
-        }
+    &:first-child {
+      &:after {
+        content: "HOME";
+      }
     }
   }
 
-  a.about-link{
+  a.about-link {
     &:after {
-        content: "ABOUT";
+      content: "ABOUT";
     }
   }
 
-  a.projects-link{
+  a.projects-link {
     &:after {
-        content: "PROJECTS";
+      content: "PROJECTS";
     }
   }
 
-  a.contact-link{
+  a.contact-link {
     &:after {
-        content: "CONTACT";
+      content: "CONTACT";
     }
   }
 
-  a.active{
-    svg{
-        color: #8493ce;
+  a.active {
+    svg {
+      color: #8493ce;
     }
   }
 }
 
-ul{
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
+ul {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: block;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+
+  li {
+    padding: 7px 0;
     display: block;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    margin: 0;
+    font-size: 15px;
+    line-height: 16px;
 
-    li{
-        padding: 7px 0;
-        display: block;
-        font-size: 15px;
-        line-height: 16px;
-
-        &:hover svg{
-            color: #8493ce;
-        }
+    &:hover svg {
+      color: #8493ce;
     }
+  }
 }

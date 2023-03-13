@@ -69,10 +69,14 @@
         .card-text {
           font-size: 1.5rem;
         }
-        .card-body{
+        .card-body {
           padding: 0;
         }
-        .test-button{
+        .project-links {
+          display: flex;
+          justify-content: space-around;
+        }
+        .test-button {
           padding: 0;
         }
       }
