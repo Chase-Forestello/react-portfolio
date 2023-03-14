@@ -14,22 +14,10 @@ const ProjectCard = ({ project }) => {
     modalTitle.innerText = project.Title;
     let modalBody = document.querySelector(".modal-body");
     modalBody.innerText = project.Description;
+    let modalfooter = document.querySelector(".modal-footer");
+    modalfooter.innerText = project.Tools;
   };
   return (
-    // <div className="card">
-    //   <button
-    //   className="test-btn"
-    //     type="button"
-    //   //   onClick={handleModalClick}
-    //   //   className="btn modal-btn btn-primary"
-    //   //   data-bs-toggle="modal"
-    //   //   data-bs-target="#exampleModal"
-    //   >
-    //     {/* {project.Title} */}
-    //   </button>
-    //   <img className="project-images" src={require(`../../assets/images/${project.image}.jpg`)}></img>
-    //   {/* <!-- Button trigger modal --> */}
-    // </div>
     <div class="card">
       <div class="row">
         <div class="col-md-4">
@@ -54,20 +42,35 @@ const ProjectCard = ({ project }) => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/Chase-Forestello"
+                  href={project.GitHub}
                 >
-                  <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                  <FontAwesomeIcon
+                  title="GitHub"
+                    className="project-link-icons"
+                    icon={faGithub}
+                    color="#4d4d4e"
+                  />
                 </a>
               </div>
               <div>
-                {" "}
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/Chase-Forestello"
-                >
-                  <FontAwesomeIcon icon={faCircleInfo} />
-                </a>
+                {/* <button
+      className="test-btn"
+        type="button"
+        onClick={handleModalClick}
+        className="btn modal-btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        {project.Title}
+      </button> */}
+                <FontAwesomeIcon
+                title="Info"
+                  onClick={handleModalClick}
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  className="project-link-icons"
+                  icon={faCircleInfo}
+                />
               </div>
               <div>3</div>
             </div>

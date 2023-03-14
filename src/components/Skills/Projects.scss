@@ -68,6 +68,11 @@
         }
         .card-text {
           font-size: 1.5rem;
+          font-family: sans-serif;
+        }
+        .card-title {
+          font-family: "Coolvetica";
+          color: #022c43;
         }
         .card-body {
           padding: 0;
@@ -75,6 +80,14 @@
         .project-links {
           display: flex;
           justify-content: space-around;
+
+          .project-link-icons {
+            height: 2rem;
+          }
+
+          .project-link-icons:hover {
+            cursor: pointer;
+          }
         }
         .test-button {
           padding: 0;
@@ -95,13 +108,12 @@
 }
 
 .modal-content {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background: #8493ce;
-  opacity: 0.9;
   font-weight: 400;
 
   .modal-title {
     font-size: 4rem;
+    font-family: "Coolvetica";
   }
   .modal-footer,
   .modal-header {
@@ -113,7 +125,7 @@
 
   .modal-body {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
   }
 }
 .modal-btn {

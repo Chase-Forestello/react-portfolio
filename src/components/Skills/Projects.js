@@ -30,6 +30,7 @@ const projects = {
     Demo: `https://game-face.io/" target="_blank`,
     Background: "../../assets/images/gameface.jpg",
     image: "gameface",
+    Tools: "1, 2, 3, 4, 5",
   },
 
   Project2: {
@@ -114,7 +115,7 @@ const Projects = () => {
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div className="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+          <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div className="modal-content">
               <div className="modal-header">
                 <h1
@@ -130,7 +131,7 @@ const Projects = () => {
               </div>
               <div className="modal-body"></div>
               <div className="modal-footer text-center w-100">
-                <a
+                {/* <a
                   href="https://github.com/GameFaceProductions/GameFace"
                   target="_blank"
                 >
@@ -139,7 +140,7 @@ const Projects = () => {
                     icon={faGithub}
                     color="#000"
                   />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
