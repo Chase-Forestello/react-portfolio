@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.35bbfb11.css",
-    "main.js": "/react-portfolio/static/js/main.bd6e889b.js",
+    "main.css": "/react-portfolio/static/css/main.ed89ba27.css",
+    "main.js": "/react-portfolio/static/js/main.8cfec326.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/weathermap.jpg": "/react-portfolio/static/media/weathermap.d1e51e356972cf472505.jpg",
+    "static/media/coffee.jpg": "/react-portfolio/static/media/coffee.9880ec23cdbf48aec88c.jpg",
+    "static/media/moviesearch.jpg": "/react-portfolio/static/media/moviesearch.f3a3a7a25dbc97d3cfff.jpg",
     "static/media/hangry.jpg": "/react-portfolio/static/media/hangry.301a34a83093afc5e1f3.jpg",
+    "static/media/consoleadv.jpg": "/react-portfolio/static/media/consoleadv.32c5bf6670a9f2b36f53.jpg",
+    "static/media/konami.jpg": "/react-portfolio/static/media/konami.8506d4e91f2e8764a0c1.jpg",
     "static/media/helvetica-neu.ttf": "/react-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/gameface.jpg": "/react-portfolio/static/media/gameface.ec7f9ec5312281323bff.jpg",
     "static/media/Chase.png": "/react-portfolio/static/media/Chase.f8538a980914c2a301f7.png",
     "static/media/LaBelleAurore.woff2": "/react-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "/react-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/react-portfolio/index.html",
-    "main.35bbfb11.css.map": "/react-portfolio/static/css/main.35bbfb11.css.map",
-    "main.bd6e889b.js.map": "/react-portfolio/static/js/main.bd6e889b.js.map",
+    "main.ed89ba27.css.map": "/react-portfolio/static/css/main.ed89ba27.css.map",
+    "main.8cfec326.js.map": "/react-portfolio/static/js/main.8cfec326.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35bbfb11.css",
-    "static/js/main.bd6e889b.js"
+    "static/css/main.ed89ba27.css",
+    "static/js/main.8cfec326.js"
   ]
 }
