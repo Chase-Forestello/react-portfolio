@@ -4,6 +4,14 @@ https://chase-forestello.github.io/react-portfolio
 
 Using gh-pages dependency to deploy on GitHub. Having some hiccups with routing due to the nature of gh pages.
 
+#TODO:
+<ul>
+  <li>Fix 404 issue</li>
+  <li>Add demo links</li>
+  <li>Work on responsiveness</li>
+  <li>Styling?</li>
+</ul>
+
 Main features/skills learned:
 
 <ul>
