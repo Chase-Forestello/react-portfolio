@@ -80,13 +80,16 @@
         .project-links {
           display: flex;
           justify-content: space-around;
+          margin-top: 4rem;
+          margin-right: 1rem;
 
           .project-link-icons {
-            height: 2rem;
+            height: 3.5rem;
           }
 
           .project-link-icons:hover {
             cursor: pointer;
+            color: black;
           }
         }
         .test-button {
@@ -121,11 +124,23 @@
     font-size: 3rem;
     background: #115173;
     color: black;
-  }
 
+    .tool-list{
+      font-size: 2rem;
+      border: solid 1px black;
+      border-radius: 5px;
+      padding: .5rem;
+    }
+    .tool-list:hover{
+      background: #022c43;
+      color: #fff;
+    }
+  }
+  
   .modal-body {
     font-size: 2rem;
     font-weight: 400;
+    color: #000;
   }
 }
 .modal-btn {

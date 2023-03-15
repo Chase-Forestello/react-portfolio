@@ -42,6 +42,8 @@ const Contact = () => {
           }
         }
       );
+      e.preventDefault(); 
+      // to stop page refresh (check if this works. Replace with 404 redirect solution)
   };
 
   if (document.querySelector(".home-link")) {

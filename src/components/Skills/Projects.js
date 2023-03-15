@@ -27,13 +27,13 @@ const projects = {
  that allows users to connect and grow as gamers in a safe and
  inclusive environment.`,
     GitHub: `https://github.com/GameFaceProductions/GameFace`,
-    Demo: `https://game-face.io/" target="_blank`,
-    Background: "../../assets/images/gameface.jpg",
+    // Demo: undefined,
+    // Background: "../../assets/images/gameface.jpg",
     image: "gameface",
-    Tools: "1, 2, 3, 4, 5",
+    Tools:"HTML,CSS,Bootstrap,JavaScript,Java,CRUD,Spring Boot,Amazon RDS,Filestack API,RAWG API,Google Authentication",
   },
 
-  Project2: {
+  Hangry: {
     Title: "Hangry",
     Description: `[In Development] Hangry is a solo-project SPA that serves as a magic
         8-ball for users to find a place to eat based on the entered
@@ -41,14 +41,69 @@ const projects = {
         Bootstrap. The back-end is built on Spring Boot and is served using
         AWS and the Yelp Fusion API.`,
     GitHub: `https://github.com/HangryDevelopment`,
-    Demo: `na`,
-    Background: "../../assets/images/hangry.jpg",
+    // Demo: undefined,
+    // Background: "../../assets/images/hangry.jpg",
     image: "hangry",
+    Tools: "HTML,CSS,Bootstrap,JavaScript,React,Java,Spring Boot,Yelp Fusion API,Geocoding,Geolocation",
+  },
+  WeatherMap: {
+    Title: "Weather Map",
+    Description: `An interactive paired-programming web application with geolocation, geocoding, and the OpenWeather Weather API. This project utilizes the OpenWeather API, JavaScript, and HTML to allow users to enter any location based on name, address, coordinates, or direct marker selection and receive back a 5 day weather forecast for that area. A marker is dropped which behaves dynamically allowing the user to drag to new locations.`,
+    GitHub: `https://github.com/Chase-Forestello/ryan-chase-weathermap`,
+    // Demo: undefined,
+    // Background: "../../assets/images/hangry.jpg",
+    image: "weathermap",
+    Tools: "HTML,CSS,Bootstrap,JavaScript,OpenWeather API,Geocoding,Geolocation",
+  },
+  MovieSearchRF: {
+    Title: "Movie Search Engine[React Refactor]",
+    Description: `This project is a refactor of "Move Search Engine" using React, but does not include CRUD or a backend. This single page application allows user to search for movies by name and returns a poster, rating, overview, and release date.`,
+    GitHub: `https://github.com/Chase-Forestello/movie-app`,
+    // Demo: undefined,
+    // Background: "../../assets/images/hangry.jpg",
+    image: "moviesearch",
+    Tools: "HTML,CSS,Bootstrap,JavaScript,React,The Movie Database API",
+  },
+  MovieSearch: {
+    Title: "Movie Search Engine",
+    Description: `A paired-programming single-page application with CRUD functionality. This project allows users to search for movies by name and returns a card with the movie poster, title, director, genres, and plot summary. Through HTML and JavaScript DOM manipulation, users can add, edit, or delete movies from the collection through various modal prompts. The search engine makes use of The Movie Database API (TMDB) and Glitch to serve the back-end.`,
+    GitHub: `https://github.com/Shaquielle-Chase-MovieOrg/movies-shaquielle-chase`,
+    // Demo: undefined,
+    Background: "../../assets/images/hangry.jpg",
+    image: "moviesearch",
+    Tools: "HTML,CSS,Bootstrap,JavaScript,CRUD,The Movie Database API,Glitch",
+  },
+  CafeSalastello: {
+    Title: "Café Salastello",
+    Description: `A paired-programming web application with basic in memory CRUD functionality. This project consists of a coffee website built with HTML that serves as a filing cabinet for various roasts of coffee. Through features implementing JavaScript DOM manipulation, users can search for, add or remove coffees, and also provide descriptions for those coffees.`,
+    GitHub: `https://github.com/Chase-Forestello/coffee-chase-darien`,
+    // Demo: undefined,
+    Background: "../../assets/images/hangry.jpg",
+    image: "coffee",
+    Tools: "HTML,CSS,Bootstrap,JavaScript,In-memory CRUD",
+  },
+  ConsoleAdventure: {
+    Title: "Console Adventure Game",
+    Description: `Simple console based Java adventure game. This solo project allows a user to create a fantasy character and embark on a text based choose-your-own-adventure game built solely with Java.`,
+    GitHub: `https://github.com/Chase-Forestello/codeup-java-exercises/tree/main/src/rpg_console_game`,
+    // Demo: undefined,
+    // Background: "../../assets/images/hangry.jpg",
+    image: "consoleadv",
+    Tools: "Java",
+  },
+  Konami: {
+    Title: "Konami Code",
+    Description: `A simple, fun, and interactive Konami code experience utilizing HTML, CSS, and JavaScript.`,
+    GitHub: `https://github.com/Chase-Forestello/konami`,
+    // Demo: undefined,
+    // Background: "../../assets/images/hangry.jpg",
+    image: "konami",
+    Tools: "HTML,CSS,Bootstrap,JavaScript",
   },
 };
 // not the right way, need array of objects...
 console.log(projects);
-// console.log([projects.GameFace.Demo].toString());
+// console.log([projects.GameFace.Demo].undefined());
 
 const handleModalClick = () => {
   let project = document.querySelector(".project");
@@ -85,19 +140,19 @@ const Projects = () => {
             <div className="row g-5">
               <div className="project-cards col-md-6 col-sm-12">
                 <ProjectCard project={projects.GameFace} />
-                <ProjectCard project={projects.Project2} />
+                <ProjectCard project={projects.Hangry} />
               </div>
               <div className="project-cards col-md-6 col-sm-12">
-                <ProjectCard project={projects.Project2} />
-                <ProjectCard project={projects.Project2} />
+                <ProjectCard project={projects.WeatherMap} />
+                <ProjectCard project={projects.MovieSearchRF} />
               </div>
               <div className="project-cards col-md-6 col-sm-12">
-                <ProjectCard project={projects.Project2} />
-                <ProjectCard project={projects.Project2} />
+                <ProjectCard project={projects.MovieSearch} />
+                <ProjectCard project={projects.CafeSalastello} />
               </div>
               <div className="project-cards col-md-6 col-sm-12">
-                <ProjectCard project={projects.Project2} />
-                <ProjectCard project={projects.Project2} />
+                <ProjectCard project={projects.ConsoleAdventure} />
+                <ProjectCard project={projects.Konami} />
               </div>
             </div>
             {/* <div className="project-cards">
