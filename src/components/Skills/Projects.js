@@ -30,7 +30,8 @@ const projects = {
     // Demo: undefined,
     // Background: "../../assets/images/gameface.jpg",
     image: "gameface",
-    Tools:"HTML,CSS,Bootstrap,JavaScript,Java,CRUD,Spring Boot,Amazon RDS,Filestack API,RAWG API,Google Authentication",
+    Tools:
+      "HTML,CSS,Bootstrap,JavaScript,Java,CRUD,Spring Boot,Amazon RDS,Filestack API,RAWG API,Google Authentication",
   },
 
   Hangry: {
@@ -44,7 +45,8 @@ const projects = {
     // Demo: undefined,
     // Background: "../../assets/images/hangry.jpg",
     image: "hangry",
-    Tools: "HTML,CSS,Bootstrap,JavaScript,React,Java,Spring Boot,Yelp Fusion API,Geocoding,Geolocation",
+    Tools:
+      "HTML,CSS,Bootstrap,JavaScript,React,Java,Spring Boot,Yelp Fusion API,Geocoding,Geolocation",
   },
   WeatherMap: {
     Title: "Weather Map",
@@ -53,7 +55,8 @@ const projects = {
     // Demo: undefined,
     // Background: "../../assets/images/hangry.jpg",
     image: "weathermap",
-    Tools: "HTML,CSS,Bootstrap,JavaScript,OpenWeather API,Geocoding,Geolocation",
+    Tools:
+      "HTML,CSS,Bootstrap,JavaScript,OpenWeather API,Geocoding,Geolocation",
   },
   MovieSearchRF: {
     Title: "Movie Search Engine[React Refactor]",
