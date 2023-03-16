@@ -1,4 +1,33 @@
 .home-page {
+  .skills-zone{
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 90%;
+    text-align: center;
+    font-size: 2rem;
+    
+    .skill{
+      border: solid #8493ce 1px;
+      border-radius: 1px;
+      margin: .5rem;
+      white-space: nowrap;
+      color: #8493ce;
+      margin-top: 10px;
+
+      &:hover {
+        background: #8493ce;
+        color: #333;
+      }
+    }
+    .skills-title{
+      color: #fff;
+    }
+    .skills-hr{
+      color: #8493ce;
+    }
+  }
   .text-zone {
     position: absolute;
     left: 20%;
