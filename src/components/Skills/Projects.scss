@@ -72,7 +72,7 @@
         }
         .card-title {
           font-family: "Coolvetica";
-          color: #022c43;
+          color: #c4cbe9;
         }
         .card-body {
           padding: 0;
@@ -85,6 +85,7 @@
 
           .project-link-icons {
             height: 3.5rem;
+            color: #8090cf;
           }
 
           .project-link-icons:hover {
@@ -117,6 +118,7 @@
   .modal-title {
     font-size: 4rem;
     font-family: "Coolvetica";
+    color: #8493ce;
   }
   .modal-footer,
   .modal-header {
@@ -130,6 +132,7 @@
       border: solid 1px black;
       border-radius: 5px;
       padding: 0.5rem;
+      background: #8493ce;
     }
     .tool-list:hover {
       background: #022c43;

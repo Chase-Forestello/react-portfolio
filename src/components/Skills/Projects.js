@@ -2,8 +2,6 @@ import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import "./Projects.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
 const projects = {
@@ -27,7 +25,7 @@ const projects = {
  that allows users to connect and grow as gamers in a safe and
  inclusive environment.`,
     GitHub: `https://github.com/GameFaceProductions/GameFace`,
-    // Demo: undefined,
+    Demo: undefined,
     // Background: "../../assets/images/gameface.jpg",
     image: "gameface",
     Tools:
@@ -42,7 +40,7 @@ const projects = {
         Bootstrap. The back-end is built on Spring Boot and is served using
         AWS and the Yelp Fusion API.`,
     GitHub: `https://github.com/HangryDevelopment`,
-    // Demo: undefined,
+    Demo: "https://hangrydevelopment.github.io/HangryFrontend/",
     // Background: "../../assets/images/hangry.jpg",
     image: "hangry",
     Tools:
@@ -52,7 +50,7 @@ const projects = {
     Title: "Weather Map",
     Description: `An interactive paired-programming web application with geolocation, geocoding, and the OpenWeather Weather API. This project utilizes the OpenWeather API, JavaScript, and HTML to allow users to enter any location based on name, address, coordinates, or direct marker selection and receive back a 5 day weather forecast for that area. A marker is dropped which behaves dynamically allowing the user to drag to new locations.`,
     GitHub: `https://github.com/Chase-Forestello/ryan-chase-weathermap`,
-    // Demo: undefined,
+    Demo: "https://chase-forestello.github.io/weathermap/",
     // Background: "../../assets/images/hangry.jpg",
     image: "weathermap",
     Tools:
@@ -62,7 +60,7 @@ const projects = {
     Title: "Movie Search Engine[React Refactor]",
     Description: `This project is a refactor of "Move Search Engine" using React, but does not include CRUD or a backend. This single page application allows user to search for movies by name and returns a poster, rating, overview, and release date.`,
     GitHub: `https://github.com/Chase-Forestello/movie-app`,
-    // Demo: undefined,
+    Demo: "https://chase-forestello.github.io/movie-app/",
     // Background: "../../assets/images/hangry.jpg",
     image: "moviesearch",
     Tools: "HTML,CSS,Bootstrap,JavaScript,React,The Movie Database API",
@@ -71,7 +69,7 @@ const projects = {
     Title: "Movie Search Engine",
     Description: `A paired-programming single-page application with CRUD functionality. This project allows users to search for movies by name and returns a card with the movie poster, title, director, genres, and plot summary. Through HTML and JavaScript DOM manipulation, users can add, edit, or delete movies from the collection through various modal prompts. The search engine makes use of The Movie Database API (TMDB) and Glitch to serve the back-end.`,
     GitHub: `https://github.com/Shaquielle-Chase-MovieOrg/movies-shaquielle-chase`,
-    // Demo: undefined,
+    Demo: undefined,
     Background: "../../assets/images/hangry.jpg",
     image: "moviesearch",
     Tools: "HTML,CSS,Bootstrap,JavaScript,CRUD,The Movie Database API,Glitch",
@@ -80,7 +78,7 @@ const projects = {
     Title: "Café Salastello",
     Description: `A paired-programming web application with basic in memory CRUD functionality. This project consists of a coffee website built with HTML that serves as a filing cabinet for various roasts of coffee. Through features implementing JavaScript DOM manipulation, users can search for, add or remove coffees, and also provide descriptions for those coffees.`,
     GitHub: `https://github.com/Chase-Forestello/coffee-chase-darien`,
-    // Demo: undefined,
+    Demo: "https://chase-forestello.github.io/cafe-salastello/",
     Background: "../../assets/images/hangry.jpg",
     image: "coffee",
     Tools: "HTML,CSS,Bootstrap,JavaScript,In-memory CRUD",
@@ -89,7 +87,7 @@ const projects = {
     Title: "Console Adventure Game",
     Description: `Simple console based Java adventure game. This solo project allows a user to create a fantasy character and embark on a text based choose-your-own-adventure game built solely with Java.`,
     GitHub: `https://github.com/Chase-Forestello/codeup-java-exercises/tree/main/src/rpg_console_game`,
-    // Demo: undefined,
+    Demo: undefined,
     // Background: "../../assets/images/hangry.jpg",
     image: "consoleadv",
     Tools: "Java",
@@ -98,7 +96,7 @@ const projects = {
     Title: "Konami Code",
     Description: `A simple, fun, and interactive Konami code experience utilizing HTML, CSS, and JavaScript.`,
     GitHub: `https://github.com/Chase-Forestello/konami`,
-    // Demo: undefined,
+    Demo: "https://chase-forestello.github.io/konami/",
     // Background: "../../assets/images/hangry.jpg",
     image: "konami",
     Tools: "HTML,CSS,Bootstrap,JavaScript",
@@ -108,10 +106,10 @@ const projects = {
 console.log(projects);
 // console.log([projects.GameFace.Demo].undefined());
 
-const handleModalClick = () => {
-  let project = document.querySelector(".project");
-  console.log(project);
-};
+// const handleModalClick = () => {
+//   let project = document.querySelector(".project");
+//   console.log(project);
+// };
 const Projects = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
 

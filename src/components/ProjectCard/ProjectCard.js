@@ -1,6 +1,6 @@
 import React from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { faCircleInfo, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectCard = ({ project }) => {
@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
     let modalBody = document.querySelector(".modal-body");
     modalBody.innerText = project.Description;
     let modalfooter = document.querySelector(".modal-footer");
-    if (project.Tools != undefined) {
+    if (project.Tools !== undefined) {
       let tools = project.Tools.split(",");
       console.log(tools);
       modalfooter.innerHTML = ``;
@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className="col-md-8">
           <div className="card-body">
-            <h3 className="card-title">{project.Title}</h3>
+            <h3 className="card-title text-wrap">{project.Title}</h3>
             <div className="project-links">
               <div>
                 <a target="_blank" rel="noreferrer" href={project.GitHub}>
@@ -46,21 +46,10 @@ const ProjectCard = ({ project }) => {
                     title="GitHub"
                     className="project-link-icons"
                     icon={faGithub}
-                    color="#4d4d4e"
                   />
                 </a>
               </div>
               <div>
-                {/* <button
-      className="test-btn"
-        type="button"
-        onClick={handleModalClick}
-        className="btn modal-btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        {project.Title}
-      </button> */}
                 <FontAwesomeIcon
                   title="Info"
                   onClick={handleModalClick}
@@ -70,7 +59,17 @@ const ProjectCard = ({ project }) => {
                   icon={faCircleInfo}
                 />
               </div>
-              <div>3</div>
+              {project.Demo !== undefined ? (
+                <a target="_blank" rel="noreferrer" href={project.Demo}>
+                  <FontAwesomeIcon
+                    title="Demo"
+                    className="project-link-icons"
+                    icon={faPlay}
+                  />
+                </a>
+              ) : (
+                <div></div>
+              )}
             </div>
           </div>
         </div>
