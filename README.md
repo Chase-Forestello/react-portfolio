@@ -7,9 +7,7 @@ Using gh-pages dependency to deploy on GitHub. Having some hiccups with routing 
 #TODO:
 
 <ul>
-  <li>Add skills to homepage</li>
   <li>Fix 404 issue</li>
-  <li>Add demo links</li>
   <li>Work on responsiveness</li>
   <li>Styling?</li>
 </ul>
