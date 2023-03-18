@@ -80,34 +80,34 @@ const Home = () => {
             />
           </text>
           <div className="skills">
-          <br></br>
-          <hr className="skills-hr"></hr>
-          <span className="skill">HTML</span>
-          <span className="skill">CSS</span>
-          <span className="skill">SCSS</span>
-          <span className="skill">Bootstrap</span>
-          <span className="skill">JavaScript</span>
-          <span className="skill">React</span>
-          <span className="skill">Java</span>
-          <span className="skill">Spring Boot</span>
-          <span className="skill">Hibernate</span>
-          <span className="skill">MySQL</span>
-          <span className="skill">Database Design</span>
-          <span className="skill">OOP</span>
-          <span className="skill">SDLC</span>
-          <span className="skill">REST API's</span>
-          <span className="skill">SPA's</span>
-          <span className="skill">TDD</span>
-          <span className="skill">Swagger</span>
-          <span className="skill">Verison Control with Git</span>
-          <span className="skill">GitHub</span>
-          <span className="skill">GitHub Projects</span>
-          <span className="skill">AWS</span>
-          <span className="skill">SCRUM</span>
-          <span className="skill">Paired Programming</span>
-          <span className="skill">Mobile First Development</span>
-          <hr className="skills-hr"></hr>
-        </div>
+            <br></br>
+            <hr className="skills-hr"></hr>
+            <span className="skill">HTML</span>
+            <span className="skill">CSS</span>
+            <span className="skill">SCSS</span>
+            <span className="skill">Bootstrap</span>
+            <span className="skill">JavaScript</span>
+            <span className="skill">React</span>
+            <span className="skill">Java</span>
+            <span className="skill">Spring Boot</span>
+            <span className="skill">Hibernate</span>
+            <span className="skill">MySQL</span>
+            <span className="skill">Database Design</span>
+            <span className="skill">OOP</span>
+            <span className="skill">SDLC</span>
+            <span className="skill">REST API's</span>
+            <span className="skill">SPA's</span>
+            <span className="skill">TDD</span>
+            <span className="skill">Swagger</span>
+            <span className="skill">Verison Control with Git</span>
+            <span className="skill">GitHub</span>
+            <span className="skill">GitHub Projects</span>
+            <span className="skill">AWS</span>
+            <span className="skill">SCRUM</span>
+            <span className="skill">Paired Programming</span>
+            <span className="skill">Mobile First Development</span>
+            <hr className="skills-hr"></hr>
+          </div>
         </div>
       </div>
       <Loader type="pacman"></Loader>
