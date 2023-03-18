@@ -8,6 +8,7 @@ Using gh-pages dependency to deploy on GitHub. Having some hiccups with routing 
 
 <ul>
   <li>Work on responsiveness</li>
+  <li>Adjust break points (~770px instead of 600px)</li>
   <li>Styling?</li>
 </ul>
 
