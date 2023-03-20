@@ -68,7 +68,10 @@ const ProjectCard = ({ project }) => {
                   />
                 </a>
               ) : (
-                <div></div>
+                <div><FontAwesomeIcon
+                className="hide"
+                icon={faPlay}
+              /></div>
               )}
             </div>
           </div>
