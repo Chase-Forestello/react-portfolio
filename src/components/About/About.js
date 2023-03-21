@@ -42,7 +42,7 @@ const About = () => {
           </h1>
           <p>
             Dedicated to writing clean code that delivers seamless, intuitive,
-            secure, and efficient experiences. I am highly adaptable and can
+            secure, and efficient experiences. I'm highly adaptable and can
             quickly find solutions with the tools and skills I have.
             Organization and structure are my primary focuses.
           </p>
