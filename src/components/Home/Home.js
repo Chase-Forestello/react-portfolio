@@ -72,13 +72,13 @@ const Home = () => {
           </div>
         </div>
         <div className="skills-zone">
-          <text className="skills-title">
+          <span className="skills-title">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={skillsArray}
               index={22}
             />
-          </text>
+          </span>
           <div className="skills">
             <br></br>
             <hr className="skills-hr"></hr>

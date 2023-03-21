@@ -38,7 +38,7 @@
   }
   .text-zone {
     position: absolute;
-    left: 15%;
+    left: 25%;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
@@ -58,19 +58,18 @@
       color: #8493ce;
       font-size: 18px;
       position: absolute;
-      margin-top: -40px;
-      left: 15px;
+      margin-top: -25px;
       opacity: 0.6;
     }
 
     &::after {
-      content: "<h1>";
+      content: "</h1>";
       font-family: "La Belle Aurore";
       color: #8493ce;
       font-size: 18px;
       position: absolute;
       margin-top: 18px;
-      margin-left: 20px;
+      margin-left: 8px;
       animation: fadeIn 1s 1.7sa backwards;
     }
 
@@ -142,6 +141,8 @@
 
     .text-zone {
       top: 45%;
+      width: auto;
+      left: 22%;
 
       h1 {
         font-size: 4rem;
