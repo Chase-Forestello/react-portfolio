@@ -25,7 +25,7 @@ const projects = {
  that allows users to connect and grow as gamers in a safe and
  inclusive environment.`,
     GitHub: `https://github.com/GameFaceProductions/GameFace`,
-    Demo: undefined,
+    Demo: "https://game-face.io/",
     // Background: "../../assets/images/gameface.jpg",
     image: "gameface",
     Tools:
