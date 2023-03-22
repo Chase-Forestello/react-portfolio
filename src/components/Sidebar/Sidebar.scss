@@ -127,9 +127,33 @@ ul {
 
 /*(770px and down) */
 
-// @media only screen and (max-width: 770px) {
-//   .nav-bar{
+@media only screen and (max-width: 770px) {
+  .nav-bar {
+    width: 100%;
+    height: fit-content;
+    min-height: auto;
+    display: flex;
 
-//   }
+    .logo img {
+      height: 3rem;
+    }
+  }
 
-// }
+  nav {
+    display: flex;
+    top: -40%;
+    position: unset;
+    margin: 0;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  ul {
+    width: auto;
+    position: unset;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

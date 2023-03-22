@@ -55,7 +55,7 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </nav>
-      <ul>
+      <ul className="social-links">
         <li>
           <a
             target="_blank"
