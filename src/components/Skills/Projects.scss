@@ -98,9 +98,6 @@
             margin-right: 2rem;
           }
         }
-        .test-button {
-          padding: 0;
-        }
       }
     }
   }
@@ -164,12 +161,27 @@
   border-color: #115173;
 }
 
-/*(770px and down) */
-@media only screen and (max-width: 770px) {
+/*(1000px and down) */
+@media only screen and (max-width: 1000px) {
   .skills-page {
     .text-zone {
-      left: 20%;
-      top: 15%;
+      left: 10%;
+      top: 20%;
+      width: auto;
+
+      .project-container {
+        margin-left: 5rem;
+        width: auto;
+
+        .g-5,
+        .gx-5 {
+          --bs-gutter-x: 0;
+        }
+      }
+
+      h1 {
+        left: 0;
+      }
     }
   }
 }

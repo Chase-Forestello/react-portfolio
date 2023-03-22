@@ -28,13 +28,11 @@ const ProjectCard = ({ project }) => {
     <div className="card">
       <div className="row">
         <div className="col-md-4">
-          <button className="test-button">
-            <img
-              src={require(`../../assets/images/${project.image}.jpg`)}
-              className="img-fluid rounded-start"
-              alt={project.image}
-            ></img>
-          </button>
+          <img
+            src={require(`../../assets/images/${project.image}.jpg`)}
+            className="img-fluid rounded-start"
+            alt={project.image}
+          ></img>
         </div>
         <div className="col-md-8">
           <div className="card-body">

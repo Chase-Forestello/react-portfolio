@@ -103,27 +103,28 @@
   }
 }
 
+// /*(1000px and down) */
+// @media only screen and (max-width: 1000px) {
+//   .about-page {
+//     .text-zone {
+//       left: 15%;
+//       width: 80%;
+//     }
+
+//     .stage-cube-cont {
+//       left: 75%;
+//       top: -15%;
+//     }
+//   }
+// }
+
 /*(1000px and down) */
 @media only screen and (max-width: 1000px) {
   .about-page {
     .text-zone {
-      left: 15%;
-      width: 80%;
-    }
-
-    .stage-cube-cont {
-      left: 75%;
-      top: -15%;
-    }
-  }
-}
-
-/*(770px and down) */
-@media only screen and (max-width: 770px) {
-  .about-page {
-    .text-zone {
-      left: 22%;
+      left: 10%;
       width: 75%;
+      top: 60%;
     }
 
     .stage-cube-cont {

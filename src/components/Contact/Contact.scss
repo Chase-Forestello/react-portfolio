@@ -163,26 +163,26 @@
   }
 }
 
+// /*(1000px and down) */
+// @media only screen and (max-width: 1000px) {
+//   .contact-page {
+//     .text-zone {
+//       left: 12%;
+//       width: 80%;
+//       white-space: normal;
+//     }
+//   }
+// }
+
 /*(1000px and down) */
 @media only screen and (max-width: 1000px) {
-  .contact-page {
-    .text-zone {
-      left: 12%;
-      width: 80%;
-      white-space: normal;
-    }
-  }
-}
-
-/*(770px and down) */
-@media only screen and (max-width: 770px) {
   .container {
-    top: 5%;
+    top: 15%;
   }
   .contact-page {
     .text-zone {
-      left: 20%;
-      width: 65%;
+      left: 10%;
+      width: 75%;
       white-space: normal;
 
       p {
@@ -195,11 +195,14 @@
 
       .contact-form {
         position: absolute;
-        bottom: 25rem;
+
+        .flat-button{
+          margin-top: 0;
+        }
       }
     }
   }
   .tags {
-    bottom: -15px;
+    bottom: -12%;
   }
 }

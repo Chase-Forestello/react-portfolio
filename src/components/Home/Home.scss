@@ -116,40 +116,40 @@
   }
 }
 
+// /*(1000px and down) */
+// @media only screen and (max-width: 1000px) {
+//   .home-page {
+//     .skills-zone {
+//       left: 15%;
+//       top: 95%;
+//       width: 100%;
+
+//       .skill {
+//         white-space: normal;
+//       }
+//     }
+//   }
+// }
+
 /*(1000px and down) */
 @media only screen and (max-width: 1000px) {
   .home-page {
-    .skills-zone {
-      left: 15%;
-      top: 95%;
-      width: 100%;
-
-      .skill {
-        white-space: normal;
-      }
-    }
-  }
-}
-
-/*(770px and down) */
-@media only screen and (max-width: 770px) {
-  .home-page {
     .tags {
-      left: 20%;
+      left: 5%;
       top: 0%;
     }
 
     .text-zone {
       top: 45%;
       width: auto;
-      left: 22%;
+      left: 10%;
 
       h1 {
         font-size: 4rem;
       }
     }
     .skills-zone {
-      left: 15%;
+      left: 10%;
       top: 110%;
       font-size: 1.5rem;
       width: 80%;
