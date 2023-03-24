@@ -40,7 +40,7 @@ const projects = {
         Bootstrap. The back-end is built on Spring Boot and is served using
         AWS and the Yelp Fusion API.`,
     GitHub: `https://github.com/HangryDevelopment`,
-    Demo: "https://hangrydevelopment.github.io/HangryFrontend/",
+    Demo: "https://www.hangry.tk/",
     // Background: "../../assets/images/hangry.jpg",
     image: "hangry",
     Tools:
