@@ -99,7 +99,7 @@ const Home = () => {
             <span className="skill">SPA's</span>
             <span className="skill">TDD</span>
             <span className="skill">Swagger</span>
-            <span className="skill">Verison Control with Git</span>
+            <span className="skill">Version Control with Git</span>
             <span className="skill">GitHub</span>
             <span className="skill">GitHub Projects</span>
             <span className="skill">AWS</span>
