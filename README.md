@@ -7,7 +7,9 @@ Using gh-pages dependency to deploy on GitHub. Having some hiccups with routing 
 #TODO:
 
 <ul>
-  <li>Styling?</li>
+  <li>Remove unnecessary animations</li>
+  <li>Cohesive Styling</li>
+  <li>Custom domain</li>
 </ul>
 
 Main features/skills learned:
