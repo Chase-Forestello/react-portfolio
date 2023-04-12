@@ -1,6 +1,6 @@
 # An updated and more modern verison of my [original portfolio], built using React!
 
-https://chase-forestello.github.io/react-portfolio
+https://www.chaseforestello.com
 
 Using gh-pages dependency to deploy on GitHub. Having some hiccups with routing due to the nature of gh pages.
 
