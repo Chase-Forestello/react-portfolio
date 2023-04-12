@@ -10,13 +10,13 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/react-portfolio" element={<Layout />}>
-          <Route path="/react-portfolio" element={<Home />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} />
           {/* Make this first home route into a welcome page. gh-page routing!*/}
-          <Route path="/react-portfolio/home" index element={<Home />} />
-          <Route path="/react-portfolio/about" element={<About />} />
-          <Route path="/react-portfolio/projects" element={<Projects />} />
-          <Route path="/react-portfolio/contact" element={<Contact />} />
+          <Route path="/home" index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           {/*<Route path="/portfolio" element={<Portfolio />} />
           <Route path="/dashboard" element={<Dashboard />} /> */}
         </Route>
