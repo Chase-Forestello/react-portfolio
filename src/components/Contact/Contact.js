@@ -64,7 +64,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I'm currently seeking employment as a front-end developer,
+            I'm currently employmed as a QA Developer,
             <br />
             but I'm also interested in freelance opportunites for projects big
             and small. <br />

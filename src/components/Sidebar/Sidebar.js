@@ -13,7 +13,7 @@ import {
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-      <Link className={"logo"} to="/react-portfolio/home">
+      <Link className={"logo"} to="/home">
         <img src={LogoC} alt="Logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="Logo" />
       </Link>
@@ -23,7 +23,7 @@ const Sidebar = () => {
           className={(navData) =>
             navData.isActive ? "home-link active" : "home-link"
           }
-          to="/react-portfolio/home"
+          to="/home"
         >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
@@ -32,7 +32,7 @@ const Sidebar = () => {
           className={(navData) =>
             navData.isActive ? "about-link active" : "about-link"
           }
-          to="/react-portfolio/about"
+          to="/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
@@ -41,7 +41,7 @@ const Sidebar = () => {
           className={(navData) =>
             navData.isActive ? "projects-link active" : "projects-link"
           }
-          to="/react-portfolio/projects"
+          to="/projects"
         >
           <FontAwesomeIcon icon={faStackOverflow} color="#4d4d4e" />
         </NavLink>
@@ -50,7 +50,7 @@ const Sidebar = () => {
           className={(navData) =>
             navData.isActive ? "contact-link active" : "contact-link"
           }
-          to="/react-portfolio/contact"
+          to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>

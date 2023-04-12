@@ -54,7 +54,7 @@ const About = () => {
             In my spare time I'm a gamer, bogey golfer, and avid enthusiast of
             all things science.
           </p>
-          <Link to="/react-portfolio/projects" className="flat-button">
+          <Link to="/projects" className="flat-button">
             MY PROJECTS
           </Link>
         </div>

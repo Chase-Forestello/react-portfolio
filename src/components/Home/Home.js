@@ -63,10 +63,10 @@ const Home = () => {
           </h1>
           <h2>Front-end Developer</h2>
           <div className="home-buttons">
-            <Link to="/react-portfolio/contact" className="flat-button">
+            <Link to="/contact" className="flat-button">
               CONTACT ME
             </Link>
-            <Link to="/react-portfolio/projects" className="flat-button">
+            <Link to="/projects" className="flat-button">
               MY PROJECTS
             </Link>
           </div>
