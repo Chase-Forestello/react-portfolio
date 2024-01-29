@@ -25,7 +25,7 @@ const projects = {
  that allows users to connect and grow as gamers in a safe and
  inclusive environment.`,
     GitHub: `https://github.com/GameFaceProductions/GameFace`,
-    Demo: "https://game-face.io/",
+    // Demo: "https://game-face.io/",
     // Background: "../../assets/images/gameface.jpg",
     image: "gameface",
     Tools:
@@ -40,7 +40,7 @@ const projects = {
         Bootstrap. The back-end is built on Spring Boot and is served using
         AWS and the Yelp Fusion API.`,
     GitHub: `https://github.com/HangryDevelopment`,
-    Demo: "https://www.hangry.tk/",
+    // Demo: "https://www.hangry.tk/",
     // Background: "../../assets/images/hangry.jpg",
     image: "hangry",
     Tools:
