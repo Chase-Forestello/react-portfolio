@@ -10,9 +10,14 @@ const Home = () => {
   // could just use split
   const nameArray = ["h", "a", "s", "e"];
   const webDevArray = [
+    "s",
+    "o",
+    "f",
+    "t",
     "w",
+    "a",
+    "r",
     "e",
-    "b",
     " ",
     "d",
     "e",
@@ -61,7 +66,7 @@ const Home = () => {
               index={22}
             />
           </h1>
-          <h2>Front-end Developer</h2>
+          <h2>Full-stack Developer</h2>
           <div className="home-buttons">
             <Link to="/contact" className="flat-button">
               CONTACT ME
@@ -89,7 +94,9 @@ const Home = () => {
             <span className="skill">JavaScript</span>
             <span className="skill">React</span>
             <span className="skill">Java</span>
-            <span className="skill">Spring Boot</span>
+            <span className="skill">Groovy</span>
+            <span className="skill">Grails</span>
+            <span className="skill">Spring</span>
             <span className="skill">Hibernate</span>
             <span className="skill">MySQL</span>
             <span className="skill">Database Design</span>
