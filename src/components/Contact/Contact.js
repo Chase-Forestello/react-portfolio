@@ -64,10 +64,9 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I'm currently employed as a QA Developer,
+            I'm currently employed as a Developer,
             <br />
-            but I'm also interested in freelance opportunites for projects big
-            and small. <br />
+            but I'm also interested in small freelance opportunites. <br />
             Contact me using the form below!
           </p>
           <p className="emailSuccess emailToggle">Message sent, thank you!</p>
